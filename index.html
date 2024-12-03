@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật Quỳnh Như!</title>
+    <style>
+        /* Đặt nền cho toàn trang */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffcccb, #ffb6b9);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            animation: backgroundMove 5s ease infinite;
+        }
+
+        /* Chuyển động nền */
+        @keyframes backgroundMove {
+            0% { background: linear-gradient(135deg, #ffcccb, #ffb6b9); }
+            50% { background: linear-gradient(135deg, #ffb6b9, #ffcccb); }
+            100% { background: linear-gradient(135deg, #ffcccb, #ffb6b9); }
+        }
+
+        /* Container chính */
+        .container {
+            background-color: rgba(242, 125, 125, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hiệu ứng hover cho container */
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #fff;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-out 0.5s;
+        }
+
+        .message {
+            font-size: 1.5em;
+            margin-top: 20px;
+            font-weight: bold;
+            opacity: 0;
+            animation: fadeIn 2s ease-out 1s forwards;
+        }
+
+        /* Hiệu ứng fade-in */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .image {
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 2s ease-out 1.5s forwards;
+        }
+
+        .image img {
+            width: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image img:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 1.2em;
+            animation: fadeIn 1s ease-out 2s forwards;
+        }
+
+        /* Bánh kem và số 18 */
+        .cake-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 40px;
+        }
+
+        .cake img {
+            width: 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .cake img:hover {
+            transform: scale(1.1);
+        }
+
+        .number18 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 4em;
+            color: #fff;
+            font-weight: bold;
+            animation: fadeIn 2s ease-out 2s forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Chúc Mừng Sinh Nhật Quỳnh Như!</h1>
+        <h2>Chúc bạn một ngày sinh nhật thật vui vẻ và hạnh phúc!</h2>
+        <div class="message">
+            Mong rằng mọi ước mơ của bạn sẽ trở thành hiện thực trong năm nay. Chúc bạn luôn vui vẻ, thành công và gặp nhiều may mắn!
+        </div>
+
+        <!-- Bánh Kem với Số 18 -->
+        <div class="cake-container">
+        </div>
+
+        <div class="image">
+            <img src="https://png.pngtree.com/png-clipart/20190515/original/pngtree-mbe-style-cartoon-cute-fruit-cream-cake-material-cakecream-cakestrawberry-cakecake-png-image_4040001.jpg" alt="Happy Birthday Image">
+        </div>
+
+        <div class="footer">
+            <p>Chúc bạn có một ngày sinh nhật thật đặc biệt!</p>
+        </div>
+    </div>
+
+</body>
+</html>
